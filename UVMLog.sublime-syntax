@@ -40,7 +40,7 @@ contexts:
       pop: true
   integer_number:
     - match: \s[0-9]*'[dbh][0-9]+\s
-    - scope: constant.numeric.integer.hexadecimal
+      scope: constant.numeric.integer.hexadecimal
  
   fatal: 
     - match: \bfatal\b
