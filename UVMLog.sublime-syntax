@@ -18,37 +18,37 @@ contexts:
     
   uvm_log_record:
     - match: \bUVM_INFO\b
-      scope: entity.name.info
+      scope: entity.name.info.uvmlog
   uvm_error_record:
     - match: \bUVM_ERROR\b
-      scope: invalid
+      scope: invalid.uvmlog
   uvm_warn_record:
     - match: \bUVM_WARNING\b
-      scope: entity.name.warn
+      scope: entity.name.warn.uvmlog
   uvm_fatal_record:
     - match: \bUVM_FATAL\b
-      scope: invalid
+      scope: invalid.uvmlog
   uvm_trigger_time:
     - match: '@'
-      scope: keyword.control
+      scope: keyword.control.uvmlog
       push: time_number
   time_number: 
-    - meta_scope: keyword.control
+    - meta_scope: keyword.control.uvmlog
     - match: \b[0-9]+\s
       pop: true
     - match: \b[0-9]+:\s
       pop: true
   integer_number:
     - match: \s[0-9]*'[dbh][0-9]+\s
-      scope: constant.numeric.integer.hexadecimal
+      scope: constant.numeric.integer.hexadecimal.uvmlog
  
   fatal: 
     - match: \bfatal\b
-      scope: invalid
+      scope: invalid.uvmlog
       
   path:
     - match: \b\/([A-z0-9-_+]+\/)*([A-z0-9]+\.(sv|svh|svi))$\b
-      scope: comment
+      scope: comment.uvmlog
   discard_information:
     - match: \b^[^/].*\b
-      scope: comment
+      scope: comment.uvmlog
