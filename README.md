@@ -1,11 +1,11 @@
-UVM log plugin for Sublime text
+# UVM log plugin for Sublime text
 
-# Feature
+## Feature
 
 * Highlighting UVM_INFO/UVM_WARN/UVM_ERROR/UVM_FATAL, trigger time, etc
 * Fold verbose log and only reserve useful information(TODO)
 
-# Usage
+## Usage
 
 1. In ST3/4
 
@@ -16,5 +16,6 @@ Just install like other package by Package Control
 git clone https://github.com/erihsu/UVMLog -p ~/.config/bat/syntaxes
 bat cache --build
 ```
-   
+
+
 Find more description on [UVMLog](http://xuzhenyu.info/2022-02-02-make-your-UVM-based-simulation-log-more-comfortable-with-UVMLog/)
